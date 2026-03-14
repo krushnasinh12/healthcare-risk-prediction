@@ -55,17 +55,17 @@ import os
 # Change working directory to the folder where your app is
 
 # Function to check if Streamlit is already running
-def is_streamlit_running():
-    for proc in psutil.process_iter(['name', 'cmdline']):
-        try:
-            if proc.info['cmdline'] and 'streamlit' in ' '.join(proc.info['cmdline']):
-                return True
-        except:
-            continue
-    return False
+#def is_streamlit_running():
+ #   for proc in psutil.process_iter(['name', 'cmdline']):
+  #      try:
+   #         if proc.info['cmdline'] and 'streamlit' in ' '.join(proc.info['cmdline']):
+    #            return True
+     #   except:
+      #      continue
+    #return False
 
 # Launch Streamlit only if not running
-if not is_streamlit_running():
-    subprocess.Popen(["python", "-m", "streamlit", "run", "app.py"])
-else:
-    print("Streamlit app is already running!")
+#if not is_streamlit_running():
+ #   subprocess.Popen(["python", "-m", "streamlit", "run", "app.py"])
+#else:
+   # print("Streamlit app is already running!")
