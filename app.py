@@ -21,9 +21,8 @@ diagnosis = st.selectbox("Diagnosis", [
     "Cancer","Kidney Disease","Stroke","Hypertension"
 ])
 
-length_of_stay = st.number_input("Length of Stay")
-
-treatment_cost = st.number_input("Treatment Cost")
+length_of_stay = st.number_input("Length of Stay", min_value=0, step=1, format="%d")
+treatment_cost = st.number_input("Treatment Cost", min_value=0, step=1, format="%d")
 
 # encode inputs
 gender_val = 1 if gender == "Male" else 0
