@@ -51,7 +51,6 @@ if st.button("Predict Risk"):
 #Create a launcher script
 import subprocess
 import os
-import psutil
 
 # Change working directory to the folder where your app is
 os.chdir(r"C:\Users\krush\OneDrive\Documents\learning python\healthcare")
